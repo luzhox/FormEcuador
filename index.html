@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario OLX</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+</head>
+<body>
+    <section class="contenedor-formulario">
+        <article class="datos-formulario">
+            <div class="logo"></div>
+            <div class="imagenmobile"></div>
+            <div class="campos-formulario">   
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='gracias.html';}"></iframe>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSe5P-ALk5UMkx4aVwEKGUdcjp_8bcED6cCHUyDxiFh-8XvaOA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <input type="text"  name="entry.1189552593" text="" class="campos" placeholder="Nombre" required>
+                <input type="email" name="entry.1210879500" text="" class="campos" placeholder="Correo" required>
+                <input type="number" name="entry.2120153235" text="" class="campos" placeholder="Teléfono" required>
+                <input type="text"  name="entry.1862306555" text="" class="campos" placeholder="Ciudad" required>
+               
+                <input type="radio" name="gender" value="male" required> Acepto términas y condiciones<br>
+                <input type="submit" value="Solicitar información" class="boton">
+             
+            </form>
+            <p>Al completar y enviar el presente formulario, Ud. entiende y acepta que los datos personales que Ud. pudiera haber brindado a OLX podrán ser almacenados durante el tiempo requerido para la finalidad para la cual pudieran haber sido solicitados por OLX o brindados por Ud., y podrán ser remitidos al tercero al que refiere el presente formulario y almacenados por el mismo con fines promocionales.</p>
+
+            </div>  
+        </article>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/estilos-formulario.js"></script>
+</body>
+</html>
